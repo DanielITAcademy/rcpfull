@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTTP service (RCP)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Add employee</h1>
+    Name:<input type="text" id="createEmployee" /><br>
+    Role: <select type="text" id="role">
+                    <option value="" disabled selected>Select your option</option>
+		            <option value="BOSS" >BOSS</option>
+					<option value="TECHNICIAN" >TECHNICIAN</option>
+					<option value="ELECTRICIAN" >ELECTRICIAN</option>
+                    <option value="PAINTER" >PAINTER</option>
+                </select></br>
+                <button type="button" onClick="addEmployee()" id="EmployeeAdd">Add Employee</button>
+
+    <h1>Update employee</h1>
+    Id<input type="text" id="upEmployee" /><br>
+    Name:<input type="text" id="updateEmployee" /><br>
+    Role: <select type="text" id="role2">
+
+                    <option value="" disabled selected>Select your option</option>
+		            <option value="BOSS" >BOSS</option>
+					<option value="TECHNICIAN" >TECHNICIAN</option>
+					<option value="ELECTRICIAN" >ELECTRICIAN</option>
+                    <option value="PAINTER" >PAINTER</option>
+                </select></br>
+                <button type="button" onClick="updateEmployee()" id="EmployeeUpdate">Update Employee</button>
+    <h1>Delete employee</h1>
+    Id<input type="text" id="delEmployee" /><br>
+   
+                    <button type="button" onClick="deleteEmployee()" id="EmployeeDelete">Delete Employee</button>
+    
+               
+
+    
+</body>
+</html>
